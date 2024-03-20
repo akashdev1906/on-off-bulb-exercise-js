@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bULB jS</title>
+</head>
+<body>
+    <div class="bulb">
+        <div class="bulb-on">
+            <img src="on-bulb.png" width="10%" alt="" id="image-bulb">
+        </div>
+       
+    </div>
+    <div class="bulb-btn">
+        <button class="off-btn" id="bulb-con-off"> OFF Button</button>
+        <button class="off-btn" id="bulb-con-on"> ON Button</button>
+       
+    </div>
+    <script>
+        // JavaScript to handle image replacement
+        document.getElementById("bulb-con-off").addEventListener("click", function() {
+          // Get reference to the image element
+          var image = document.getElementById("image-bulb");
+          
+          // Replace image source
+          image.src = "off-bulb.png"; // Replace "new-image.jpg" with the path to your new image
+          image.alt = "New Image"; // Optionally, update alt text
+        });
+      </script>
+
+
+<script>
+    // JavaScript to handle image replacement
+    document.getElementById("bulb-con-on").addEventListener("click", function() {
+      // Get reference to the image element
+      var image = document.getElementById("image-bulb");
+      
+      // Replace image source
+      image.src = "on-bulb.png"; // Replace "new-image.jpg" with the path to your new image
+      image.alt = "New Image"; // Optionally, update alt text
+    });
+  </script>
+
+</body>
+</html>
